@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import type { SwiperClass } from "swiper/react";
@@ -74,13 +75,13 @@ export default function Gallery() {
         </div>
 
         <div className="text-center mt-10">
-          <a
+          <Link
             href="/productos"
             className="inline-flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] font-medium hover:opacity-90 transition-opacity"
           >
             <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
             Ver todos los productos
-          </a>
+          </Link>
         </div>
       </div>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">

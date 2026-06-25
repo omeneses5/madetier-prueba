@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCouch } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Hero() {
   const imageRef = useRef<HTMLDivElement>(null);
@@ -42,13 +43,13 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
           Diseño, calidad y rapidez en cada detalle
         </p>
-        <a
+        <Link
           href="/servicios"
           className="inline-flex items-center gap-3 bg-green text-white px-6 py-3 rounded-[50px] text-lg font-medium hover:opacity-90 transition-opacity"
         >
           <FontAwesomeIcon icon={faCouch} className="w-5 h-5" />
           Solicita tu diseño
-        </a>
+        </Link>
       </div>
     </section>
   );

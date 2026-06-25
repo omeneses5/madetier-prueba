@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,13 +22,13 @@ export default function ContactCTA() {
           En Madetier diseñamos y fabricamos espacios a tu medida. Cuéntanos tu idea y te ayudaremos
           a convertirla en un ambiente único, funcional y lleno de estilo.
         </p>
-        <a
+        <Link
           href="/contacto"
           className="inline-flex items-center gap-3 bg-green text-white px-6 py-3 rounded-[50px] text-lg font-medium hover:opacity-90 transition-opacity"
         >
           <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
           Contáctanos ahora
-        </a>
+        </Link>
       </div>
     </section>
   );

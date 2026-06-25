@@ -48,13 +48,13 @@ export default function Header() {
 
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className={`${isActive(item.href) ? "text-green" : "text-nav-text"} hover:text-green transition-colors text-sm font-medium tracking-wide capitalize`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -97,14 +97,14 @@ export default function Header() {
         <div className="lg:hidden border-t border-gray-100 bg-white">
           <nav className="flex flex-col px-4 py-4 gap-2">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className={`${isActive(item.href) ? "text-green" : "text-dark-gray"} hover:text-green transition-colors py-2 text-sm font-medium capitalize`}
                 onClick={() => setMobileOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <div className="flex gap-3 pt-3 border-t border-gray-100">
               {socialLinks.map((social) => (

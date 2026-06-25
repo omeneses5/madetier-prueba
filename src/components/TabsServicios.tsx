@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const tabs = [
   {
@@ -80,12 +81,12 @@ export default function TabsServicios() {
               <br />
               {active.description}
             </p>
-            <a
+            <Link
               href="/contacto"
               className="inline-flex items-center justify-center bg-green text-white px-5 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity"
             >
               {active.cta}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

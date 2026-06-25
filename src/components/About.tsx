@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,13 +27,13 @@ export default function About() {
               la identidad de cada cliente, combinando creatividad, compromiso y materiales
               sostenibles.
             </p>
-            <a
+            <Link
               href="/nosotros"
               className="inline-flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] font-medium hover:opacity-90 transition-opacity"
             >
               <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
               Conócenos
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faPencilRuler, faBuilding, faCouch, faHardHat } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const services = [
   {
@@ -44,13 +45,13 @@ export default function Services() {
                 conceptual hasta la instalación final, ofrecemos soluciones integrales para hogares,
                 oficinas y negocios que buscan calidad y estilo.
               </p>
-              <a
+              <Link
                 href="/servicios"
                 className="inline-flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] font-medium hover:opacity-90 transition-opacity"
               >
                 <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
                 Conoce nuestros servicios
-              </a>
+              </Link>
             </div>
           </div>
 

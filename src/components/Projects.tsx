@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const videos = [
   "https://madetier.com/wp-content/uploads/2025/07/Video-1-Madetier-reels.mp4",
@@ -34,13 +35,13 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-10">
-          <a
+          <Link
             href="/servicios"
             className="inline-flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] font-medium hover:opacity-90 transition-opacity"
           >
             <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
             Ver más proyectos
-          </a>
+          </Link>
         </div>
       </div>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
