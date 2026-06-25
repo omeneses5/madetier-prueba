@@ -1,14 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  basePath: "/madetier-prueba",
+  assetPrefix: "/madetier-prueba",
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "madetier.com",
-        pathname: "/wp-content/uploads/**",
-      },
-    ],
+    unoptimized: true,
   },
 };
 
