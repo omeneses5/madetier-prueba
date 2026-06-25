@@ -43,7 +43,7 @@ export default function Hero() {
           Diseño, calidad y rapidez en cada detalle
         </p>
         <a
-          href="/servicios/"
+          href="/servicios"
           className="inline-flex items-center gap-3 bg-green text-white px-6 py-3 rounded-[50px] text-lg font-medium hover:opacity-90 transition-opacity"
         >
           <FontAwesomeIcon icon={faCouch} className="w-5 h-5" />

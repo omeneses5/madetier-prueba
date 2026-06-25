@@ -10,10 +10,10 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
   { label: "Inicio", href: "/" },
-  { label: "Nosotros", href: "/nosotros/" },
-  { label: "Servicios", href: "/servicios/" },
-  { label: "Productos", href: "/productos/" },
-  { label: "Contacto", href: "/contacto/" },
+  { label: "Nosotros", href: "/nosotros" },
+  { label: "Servicios", href: "/servicios" },
+  { label: "Productos", href: "/productos" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 const socialLinks = [

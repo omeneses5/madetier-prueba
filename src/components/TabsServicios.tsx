@@ -81,7 +81,7 @@ export default function TabsServicios() {
               {active.description}
             </p>
             <a
-              href="/contacto/"
+              href="/contacto"
               className="inline-flex items-center justify-center bg-green text-white px-5 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity"
             >
               {active.cta}

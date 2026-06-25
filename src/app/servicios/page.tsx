@@ -36,7 +36,7 @@ export default function ServiciosPage() {
               gratuita y descubre cómo cada detalle puede marcar la diferencia en tus proyectos.
             </p>
             <a
-              href="/contacto/"
+              href="/contacto"
               className="inline-flex items-center justify-center bg-green text-white px-6 py-3 text-lg font-medium hover:opacity-90 transition-opacity"
             >
               Inicia tu transformación

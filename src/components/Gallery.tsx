@@ -75,7 +75,7 @@ export default function Gallery() {
 
         <div className="text-center mt-10">
           <a
-            href="/productos/"
+            href="/productos"
             className="inline-flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] font-medium hover:opacity-90 transition-opacity"
           >
             <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
