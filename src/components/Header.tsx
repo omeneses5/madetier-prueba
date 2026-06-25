@@ -35,13 +35,13 @@ export default function Header() {
     <header className="bg-white border-t-[6px] border-t-green shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center shrink-0 self-stretch py-1">
+          <Link href="/" className="flex items-center">
             <Image
               src="https://madetier.com/wp-content/uploads/2025/06/LOGO_MADETIER-1-scaled-e1748911398867-1536x669.jpg"
               alt="Madetier"
               width={140}
-              height={140}
-              className="h-full w-auto"
+              height={61}
+              className="w-auto h-12"
               priority
             />
             </Link>
