@@ -8,20 +8,20 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import type { SwiperClass } from "swiper/react";
+import prod1 from "../../assets/producto-1.png";
+import prod2 from "../../assets/producto-2.png";
+import prod3 from "../../assets/producto-3.png";
+import prod4 from "../../assets/producto-4.png";
+import prod5 from "../../assets/producto-5.png";
+import prod6 from "../../assets/producto-6.png";
 
-const images = [
-  "https://madetier.com/wp-content/uploads/2025/06/13-scaled.jpg",
-  "https://madetier.com/wp-content/uploads/2025/06/7D2A6436-scaled.jpg",
-  "https://madetier.com/wp-content/uploads/2025/06/14-scaled.jpg",
-  "https://madetier.com/wp-content/uploads/2025/07/3-scaled.jpg",
-  "https://madetier.com/wp-content/uploads/2025/06/2-scaled.jpg",
-];
+const images = [prod1, prod2, prod3, prod4, prod5, prod6];
 
 export default function Gallery() {
   const swiperRef = useRef<SwiperClass | null>(null);
 
   return (
-    <section className="relative py-20 md:py-28 pb-24 md:pb-32">
+    <section className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gold font-slab">
@@ -83,15 +83,6 @@ export default function Gallery() {
             Ver todos los productos
           </Link>
         </div>
-      </div>
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
-        <Image
-          src="https://madetier.com/wp-content/uploads/2025/07/IconTwoColor.png"
-          alt=""
-          width={140}
-          height={126}
-          className="w-32 md:w-36 h-auto"
-        />
       </div>
     </section>
   );

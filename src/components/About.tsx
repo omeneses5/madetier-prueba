@@ -2,22 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import nosotrosImg from "../../assets/nosotros.png";
 
 export default function About() {
   return (
-    <section className="relative bg-beige py-20 md:py-28 pb-24 md:pb-32">
+    <section className="bg-beige py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square overflow-hidden rounded-lg">
             <Image
-              src="https://madetier.com/wp-content/uploads/2025/06/480797666_1111412600791068_7157863617726442983_n.jpg"
+              src={nosotrosImg}
               alt="Sobre Madetier"
               fill
               className="object-cover"
             />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-dark-teal font-slab mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gold font-slab mb-6">
               Sobre nosotros
             </h2>
             <p className="text-dark-teal/80 leading-relaxed mb-8">
@@ -36,15 +37,6 @@ export default function About() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
-        <Image
-          src="https://madetier.com/wp-content/uploads/2025/07/IconTwoColor1.png"
-          alt=""
-          width={140}
-          height={126}
-          className="w-32 md:w-36 h-auto"
-        />
       </div>
     </section>
   );

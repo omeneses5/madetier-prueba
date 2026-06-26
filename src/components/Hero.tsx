@@ -1,34 +1,15 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCouch } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import heroBg from "../../assets/hero.png";
 
 export default function Hero() {
-  const imageRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!imageRef.current) return;
-      const scrollY = window.scrollY;
-      const speed = 0.4;
-      imageRef.current.style.transform = `translateY(${scrollY * speed}px)`;
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
-      <div
-        ref={imageRef}
-        className="absolute inset-0 will-change-transform"
-      >
+      <div className="absolute inset-0">
         <Image
-          src="https://madetier.com/wp-content/uploads/2025/07/Inicio-scaled.png"
+          src={heroBg}
           alt=""
           fill
           className="object-cover"

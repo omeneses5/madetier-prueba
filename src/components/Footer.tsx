@@ -8,6 +8,7 @@ import {
   faStore,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
+import logoSrc from "../../assets/logo-footer.png";
 
 const socialLinks = [
   { icon: faTiktok, href: "https://www.tiktok.com/@madetier?lang=es-419", label: "Tiktok" },
@@ -16,10 +17,10 @@ const socialLinks = [
 ];
 
 const interestLinks = [
-  { label: "¿Quiénes somos?", href: "/nosotros/" },
-  { label: "Políticas de Privacidad", href: "/privacidad/" },
-  { label: "Aviso Legal", href: "/aviso-legal/" },
-  { label: "Libro de Reclamos", href: "/libro-reclamos/" },
+  { label: "¿Quiénes somos?", href: "/nosotros" },
+  { label: "Políticas de Privacidad", href: "/privacidad" },
+  { label: "Aviso Legal", href: "/aviso-legal" },
+  { label: "Libro de Reclamos", href: "/libro-reclamos" },
 ];
 
 const contactItems = [
@@ -32,18 +33,18 @@ const contactItems = [
 
 export default function Footer() {
   return (
-    <footer className="bg-footer-bg pt-16 pb-0">
+    <footer className="bg-green min-h-[534px] pt-20 pb-0">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-10 pb-12">
+        <div className="grid md:grid-cols-3 gap-10 pb-16">
           <div>
             <Image
-              src="https://madetier.com/wp-content/uploads/2025/06/Logo_sinFondo.png"
+              src={logoSrc}
               alt="Madetier"
               width={160}
               height={160}
               className="w-40 h-auto mb-5"
             />
-            <p className="text-dark-teal/70 text-sm leading-relaxed">
+            <p className="text-white text-sm leading-relaxed">
               <strong>Madetier</strong> ofrece muebles a medida y diseños funcionales con calidad y
               rapidez. Transformamos espacios en hogares, oficinas y negocios únicos, comprometidos
               con la sostenibilidad.
@@ -57,7 +58,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-dark-teal/70 hover:text-green transition-colors text-sm flex items-center gap-2"
+                    className="text-white/80 hover:text-white transition-colors text-sm flex items-center gap-2"
                   >
                     <FontAwesomeIcon icon={faChevronCircleRight} className="w-3 h-3 text-gold shrink-0" />
                     {link.label}
@@ -69,12 +70,12 @@ export default function Footer() {
 
           <div>
             <h3 className="text-gold font-bold text-lg font-slab mb-6">CONTACTO</h3>
-            <ul className="space-y-3 text-sm text-dark-teal/70">
+            <ul className="space-y-3 text-sm text-white">
               {contactItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <FontAwesomeIcon icon={item.icon} className="w-4 h-4 text-gold shrink-0 mt-0.5" />
                   {item.href ? (
-                    <a href={item.href} className="hover:text-green transition-colors">
+                    <a href={item.href} className="hover:text-white/80 transition-colors">
                       {item.text}
                     </a>
                   ) : (
@@ -91,7 +92,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-9 h-9 rounded-full bg-gold text-white flex items-center justify-center hover:bg-green transition-colors"
+                  className="w-9 h-9 rounded-full bg-gold text-white flex items-center justify-center hover:bg-white/20 transition-colors"
                 >
                   <FontAwesomeIcon icon={social.icon} className="w-4 h-4" />
                 </a>
@@ -99,12 +100,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="bg-green py-4">
-        <p className="text-center text-white text-sm">
-          Todos los Derechos Reservados Copyright &copy; 2025
-        </p>
       </div>
     </footer>
   );

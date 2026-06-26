@@ -3,8 +3,8 @@ import About from "@/components/About";
 import Gallery from "@/components/Gallery";
 import Features from "@/components/Features";
 import Services from "@/components/Services";
-import Projects from "@/components/Projects";
 import ContactCTA from "@/components/ContactCTA";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
       <Gallery />
       <Features />
       <Services />
-      <Projects />
       <ContactCTA />
+      <Testimonials />
     </>
   );
 }

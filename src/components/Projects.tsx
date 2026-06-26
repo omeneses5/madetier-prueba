@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 const videos = [
@@ -10,7 +10,7 @@ const videos = [
 
 export default function Projects() {
   return (
-    <section className="relative py-20 md:py-28 pb-24 md:pb-32">
+    <section className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gold font-slab leading-tight">
@@ -43,9 +43,6 @@ export default function Projects() {
             Ver más proyectos
           </Link>
         </div>
-      </div>
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
-        <FontAwesomeIcon icon={faLeaf} className="w-16 h-16 text-gold" />
       </div>
     </section>
   );

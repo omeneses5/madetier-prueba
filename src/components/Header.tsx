@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import logoSrc from "../../assets/logo-header.png";
 
 const navItems = [
   { label: "Inicio", href: "/" },
@@ -32,12 +32,12 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white border-t-[6px] border-t-green shadow-sm">
+    <header className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center">
             <Image
-              src="https://madetier.com/wp-content/uploads/2025/06/LOGO_MADETIER-1-scaled-e1748911398867-1536x669.jpg"
+              src={logoSrc}
               alt="Madetier"
               width={140}
               height={61}
@@ -72,14 +72,6 @@ export default function Header() {
               </a>
             ))}
           </div>
-
-          <Link
-            href="/#"
-            className="hidden lg:inline-flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
-            Te ayudamos a elegir
-          </Link>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -120,13 +112,6 @@ export default function Header() {
                 </a>
               ))}
             </div>
-            <Link
-              href="/#"
-              className="inline-flex items-center justify-center gap-2 bg-green text-white px-5 py-2.5 rounded-[50px] text-sm font-medium mt-3"
-            >
-              <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
-              Te ayudamos a elegir
-            </Link>
           </nav>
         </div>
       )}

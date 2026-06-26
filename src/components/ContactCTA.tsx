@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import heroFooterBg from "../../assets/hero-footer.png";
 
 export default function ContactCTA() {
   return (
     <section className="relative min-h-[500px] flex items-center overflow-hidden">
       <Image
-        src="https://madetier.com/wp-content/uploads/2025/07/Inicio-final.png"
+        src={heroFooterBg}
         alt=""
         fill
         className="object-cover object-top"

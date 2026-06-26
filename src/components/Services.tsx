@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faPencilRuler, faBuilding, faCouch, faHardHat } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -32,7 +31,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative bg-beige py-20 md:py-28 pb-24 md:pb-32">
+    <section className="bg-beige py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">
@@ -65,15 +64,6 @@ export default function Services() {
             ))}
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
-        <Image
-          src="https://madetier.com/wp-content/uploads/2025/06/IconTwoColor1.png"
-          alt=""
-          width={140}
-          height={126}
-          className="w-32 md:w-36 h-auto"
-        />
       </div>
     </section>
   );
