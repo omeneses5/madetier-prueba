@@ -2,4 +2,4 @@
 2:I[39756,["/madetier-prueba/_next/static/chunks/1imti8v9otg32.js","/madetier-prueba/_next/static/chunks/14mrh2-p_w84d.js","/madetier-prueba/_next/static/chunks/07774tn6v875_.js","/madetier-prueba/_next/static/chunks/2tkz5qnz7-91w.js"],"default"]
 3:I[37457,["/madetier-prueba/_next/static/chunks/1imti8v9otg32.js","/madetier-prueba/_next/static/chunks/14mrh2-p_w84d.js","/madetier-prueba/_next/static/chunks/07774tn6v875_.js","/madetier-prueba/_next/static/chunks/2tkz5qnz7-91w.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"qPZCfcOIxz-5h-KkAymfj"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"Snz8KpzQFwIG-1iJ15TDr"}
